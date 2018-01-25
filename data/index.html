@@ -1,16 +1,46 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>bookapp</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>bookapp1.0</title>
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/icons.css">
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/modules.css">
+    <link rel="stylesheet" href="style/reset.css">
+
+    <script book-list-template type="text/x-handlebar-template">
+    <div class="book-item" data-book_id="{{book_id}}">
+        <img src="{{imgurl}}"/>
+        <div>
+            <p>{{title}}</p>
+            <p>{{author}}</p>
+        <div>view details</div>
+        </div>
+    </div>
+    </script>
+    <script id="error-template" type="text/x-handlebars-template"> 
+    <p>Error: {{status}} - {{statusText}}</p>
+    </script>
+
+    
 
 </head>
+
+
+</script>
 <body>
+
+    <header>
+        <li><a href="/">home</a></li>
+        <li><a href="/">home</a></li>
+        <li><a href="/">home</a></li>   
+
+    </header>
     <p>test page view</p>
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <script src="./scripts/views/book-view.js"></script>
 <script src="./scripts/views/error-view.js"></script>
